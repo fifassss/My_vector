@@ -1,5 +1,6 @@
 #include "My_vector.hpp" // сам класс моего вектора(дин.массива)
 #include <cassert> // для тестов.
+#include <iostream> // для cout
 
 // функция для тестов.
 void test_push_back()
@@ -41,4 +42,5 @@ int main()
 	
 	return 0;
 	
+
 }
