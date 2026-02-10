@@ -5,7 +5,7 @@ My academic realisation vector!
 # МЕТОДЫ
 push_back
 
-int length
+length
 
 operator[]
 
