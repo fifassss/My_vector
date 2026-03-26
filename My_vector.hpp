@@ -159,7 +159,7 @@ void Myvector<T>::emplace_back(Args&&...args) // принимает пачку �
 }
 
 template<class T>
-void Myvector<T>::reallocate(int new_capacity)
+void Myvector<T>::reallocate(int new_capacity) // опущена безопасность исключений для более простой реализации алгоритма и понятной
 {
     // выделяют СЫРУЮ ПАМЯТЬ(читать оттуда нельзя,пока мы туда что-то в память не положим что-то)
     T* new_data = static_cast<T*>(::operator new(new_capacity * sizeof(T)));
