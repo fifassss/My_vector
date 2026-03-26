@@ -13,46 +13,46 @@ private:
 public:
     VectorIterator(PointerType _ptr) : m_ptr(_ptr) {}
 
-    VectorIterator& operator++() // префикс
+    VectorIterator& operator++() noexcept // префикс
     {
         m_ptr++;
         return *this;
     }
-    VectorIterator operator++(int) // постфиксный
+    VectorIterator operator++(int) noexcept // постфиксный
     {
         VectorIterator iterator = *this;
         ++(*this);
         return iterator;
     }
-    VectorIterator& operator--() // префикс
+    VectorIterator& operator--() noexcept // префикс
     {
         m_ptr--;
         return *this;
     }
-    VectorIterator operator--(int) // постфиксный
+    VectorIterator operator--(int) noexcept // постфиксный
     {
         VectorIterator iterator = *this;
         
         --(*this);
         return iterator;
     }
-    ReferenceType operator[](int index)
+    ReferenceType operator[](int index) noexcept
     {
         return *(m_ptr + index);
     }
-    PointerType operator->()
+    PointerType operator->() noexcept
     {
         return m_ptr;
     }
-    ReferenceType operator*()
+    ReferenceType operator*() noexcept
     {
         return *m_ptr;
     }
-    bool operator==(const VectorIterator& obj) const
+    bool operator==(const VectorIterator& obj) const noexcept
     {
         return m_ptr == obj.m_ptr;
     }
-    bool operator!=(const VectorIterator& obj) const
+    bool operator!=(const VectorIterator& obj) const noexcept
     {
         return !(*this == obj);
     }
