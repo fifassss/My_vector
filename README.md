@@ -31,7 +31,7 @@ emplace_back() - принимает в качестве аргумента,вс�
 Разделение выделение памяти и рождения объекта.
 
 
-#Eng:
+# Eng:
 
 # Academic realization vector(dynamic array)
 This realization was academic.For order to form deep knowledge how work with memory in C++.And for order to form knowledge in general how work's dynamic array.
