@@ -1,4 +1,4 @@
-#ifdef GUARD_VECTOR
+#ifndef GUARD_VECTOR
 #define GUARD_VECTOR
 #include <stdexcept> // для std::out_of_range 
 #include <utility>
