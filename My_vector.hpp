@@ -1,3 +1,5 @@
+#ifdef GUARD_VECTOR
+#define GUARD_VECTOR
 #include <stdexcept> // для std::out_of_range 
 #include <utility>
 
@@ -285,7 +287,7 @@ T& Myvector<T>::at(int index)
     }
 }
 
-
+#endif
 
 // UPD
 /*
